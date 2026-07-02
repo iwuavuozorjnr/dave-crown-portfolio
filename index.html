@@ -9,11 +9,27 @@
     
 </head>
 <body>
-    <nav>
+  <nav>
 
     <div class="container">
 
-        <h1 class="logo">Dave Crown<span>.</span></h1>
+        <a href="#home" class="logo">
+            Dave Crown<span>.</span>
+        </a> 
+
+       <button class="theme-toggle" aria-label="Toggle Theme">
+
+    🌙
+
+</button>
+
+        <button class="menu-toggle" aria-label="Open Menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
 
         <ul class="nav-links">
 
@@ -27,14 +43,18 @@
 
             <li><a href="#contact">Contact</a></li>
 
-        </ul>
+            <li>
+                <a href="#contact" class="btn-primary">
+                    Hire Me
+                </a>
+            </li>
 
-        <button class="btn-primary">Hire Me</button>
+        </ul>
 
     </div>
 
 </nav>
-
+  <div class="overlay"></div>
 <section class="hero" id="home">
 
     <div class="container">
@@ -45,7 +65,10 @@
 
             <h1>Dave Crown</h1>
 
-            <h2>Web Developer</h2>
+            <h2>
+               <span id="typing-text"></span>
+               <span class="cursor">|</span>
+            </h2>
 
             <p class="hero-text">
                 I build modern, fast and responsive websites that deliver great user experiences.
@@ -75,7 +98,7 @@
 
 </section>
 
-<section class="about" id="about">
+<section class="about hidden" id="about">
 
     <div class="container">
 
@@ -103,7 +126,7 @@
 
 </section>
 
-<section class="skills" id="skills">
+<section class="skills hidden" id="skills">
 
     <div class="container">
 
@@ -154,7 +177,7 @@
 </section>
 
 
-<section class="projects" id="projects">
+<section class="projects hidden"  id="projects">
 
     <div class="container">
 
@@ -226,7 +249,7 @@
     </div>
 </section>
 
-<section class="contact" id="contact">
+<section class="contact hidden" id="contact">
 
     <div class="container">
 
