@@ -6,6 +6,7 @@
     <title>Dave Crown | Web Dev</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
 </head>
 <body>
@@ -56,6 +57,7 @@
 </nav>
   <div class="overlay"></div>
 <section class="hero" id="home">
+
 
     <div class="container">
 
@@ -119,6 +121,41 @@
             <p>
                 My goal is to create digital experiences that are clean, functional, and enjoyable for everyone who visits them.
             </p>
+            <div class="stats">
+
+    <div class="stat">
+
+        <h3 class="counter" data-target="15">0</h3>
+
+        <p>Projects</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h3 class="counter" data-target="2">0</h3>
+
+        <p>Years Learning</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h3 class="counter" data-target="100">0</h3>
+
+        <p>Passion</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h3 class="counter" data-target="24">0</h3>
+
+        <p>Hours of Curiosity</p>
+
+    </div>
+
+</div>
 
         </div>
 
@@ -258,31 +295,55 @@
             <h2>Let's Work Together</h2>
 
             <p>
-                Have a project in mind or just want to say hello? I'd love to hear from you.
+                Have a project in mind or just want to say hello?
+                I'd love to hear from you.
             </p>
 
-            <p><strong>Email:</strong>
-              <a href="mailto:youremail@gmail.com">crowndave31@gmail.com</a>
+            <p class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email:</span>
+                <a href="mailto:crowndave31@gmail.com">
+                    crowndave31@gmail.com
+                </a>
             </p>
 
-            <p><strong>Phone:</strong>
-                <a href="tel:+2348103396352"> Call Me</a>
+            <p class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>Phone:</span>
+                <a href="tel:+2348103396352">
+                    08103396352
+                </a>
             </p>
 
-            <p>
-                <strong>WhatsApp:</strong>
+            <p class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp:</span>
                 <a href="https://wa.me/2348103396352" target="_blank">
-                Chat with me
-                 </a>
+                    Chat with me
+                </a>
             </p>
-        
-            <p><strong>Location:</strong> Anambra State, Awka. Nigeria</p>
+
+            <p class="contact-item">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram:</span>
+                <a href="https://instagram.com/iwuavuozorjnr" target="_blank">
+                   iwuavuozorjnr
+                </a>
+            </p>
+
+            <p class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Location:</span>
+                <a href="#">
+                    Anambra State, Awka, Nigeria
+                </a>
+            </p>
 
         </div>
 
         <div class="contact-form">
 
-            <form>
+            <form id="contact-form">
 
                 <input type="text" placeholder="Your Name" required>
 
@@ -299,7 +360,32 @@
     </div>
 
 </section>
+ 
+<button id="backToTop" class="back-to-top">
 
+    ↑
+
+</button>
+
+<div id="toast" class="toast">
+
+    Message sent successfully!
+
+</div>
+
+<div id="preloader">
+
+    <div class="loader-content">
+
+        <div class="spinner"></div>
+
+        <h1>IWUAVUOZORJNR-DAVEE</h1>
+
+        <p>Loading...</p>
+
+    </div>
+
+</div>
         <footer>
 
     <div class="container">
@@ -331,6 +417,15 @@
     </div>
 
 </footer>    
+
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+    publicKey: "lAyFei29Ar9OeJBin",
+});
+</script>>
+
     <script src="script.js"></script>
 </body>
 </html>
